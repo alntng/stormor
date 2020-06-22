@@ -11,7 +11,7 @@ const devApp = async () => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  app.use("/api", require("./api"));
+  // app.use("/api", require("./api"));
 
   app.use(express.static(path.join(__dirname, "..", "public")));
 
@@ -21,13 +21,13 @@ const devApp = async () => {
     res.status(err.status || 500).send(err.message || "Internal server error.");
   });
 
-  const syncData = () => db.sync();
+  // const syncData = () => db.sync();
 
   const startListening = () => {
     app.listen(PORT, () => console.log(`Mixing it up on port ${PORT}`));
   };
 
-  await syncData();
+  // await syncData();
 
   startListening();
 };

@@ -13,6 +13,19 @@ const devApp = async () => {
 
   // app.use("/api", require("./api"));
 
+  app.get("/api", async (req, res, next) => {
+    try {
+      const testUser = await db.one("SELECT * FROM users WHERE users.id = 1");
+      console.log(
+        "-------------------------------------------------------",
+        testUser
+      );
+      res.json(testUser);
+    } catch (err) {
+      next(err);
+    }
+  });
+
   app.use(express.static(path.join(__dirname, "..", "public")));
 
   app.use((err, req, res, next) => {

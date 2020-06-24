@@ -1,6 +1,6 @@
-const router = require("express").Router();
+// const router = require("express").Router();
 
-router.use("/stockData", require("./stockData"));
-router.use("/users", require("./users"));
+// router.use("/stockData", require("./stockData"));
+// router.use("/users", require("./users"));
 
-module.exports = router;
+// module.exports = router;

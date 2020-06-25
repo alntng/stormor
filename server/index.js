@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const app = express();
 const db = require("./db");
 const PORT = process.env.PORT || 3000;
-const router = require("./api/renters");
+const renter = require("./api/renters");
 
 const devApp = async () => {
   app.use(morgan("dev"));
@@ -14,7 +14,7 @@ const devApp = async () => {
 
   // app.use("/api", require("./api"));
 
-  app.use("/api", router);
+  app.use("/api", renter);
 
   app.use(express.static(path.join(__dirname, "..", "public")));
 

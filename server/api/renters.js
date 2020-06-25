@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const db = require("../db/index");
+const { findRenter } = require("../../queries");
 
 router.use("/", async (req, res, next) => {
   try {

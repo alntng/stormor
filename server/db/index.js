@@ -1,4 +1,6 @@
-require("dotenv").config(); // need this line to be able to access process.env properties that are defined in .env file
+require("dotenv").config();
+
+// need this line to be able to access process.env properties that are defined in .env file
 // found at root of project
 
 const pgp = require("pg-promise")();

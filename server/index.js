@@ -5,6 +5,8 @@ const app = express();
 const db = require("./db");
 const PORT = process.env.PORT || 3000;
 const renter = require("./api/renters");
+const session = require("express-session");
+const passport = require("passport");
 
 const devApp = async () => {
   app.use(morgan("dev"));

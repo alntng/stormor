@@ -2,9 +2,10 @@ const router = require("express").Router();
 const db = require("../db/index");
 const { findRenter } = require("../../queries");
 
-router.use("/", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   try {
-    const allUsers = await db.one("SELECT * FROM renters where id = 1");
+    const allUsers = await db.one("SELECT * FROM users where id = 1");
+    console.log(allUsers);
     res.send(allUsers);
   } catch (error) {
     res.sendStatus(404);

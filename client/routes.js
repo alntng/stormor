@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { withRouter, Route, Switch } from "react-router-dom";
 import LoginForm from "./components/login";
+import Homepage from "./components/homepage";
 
-export default function routes() {
-  const [loggedIn, setLoggedIn] = useState(true);
-
+function routes() {
   return (
     <Switch>
-      <Route path="/WTF" component={LoginForm} />
-      {/* <Route path="/" component={LoginForm} /> */}
+      <Route path="/login" component={LoginForm} />
+      <Route path="/" component={Homepage} />
     </Switch>
   );
 }
+
+export default withRouter(routes);

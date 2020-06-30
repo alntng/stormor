@@ -1,14 +1,24 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function login() {
-  const [user, setUser] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (evt) => {
+  const handleSubmit = async (evt) => {
     evt.preventDefault();
-    console.log(`User is ${user}`);
-    console.log(`Password is ${password}`);
-    console.log("===ITS GETTING LOGGED===");
+    // console.log(`User is ${user}`);
+    // console.log(`Password is ${password}`);
+    // console.log("===ITS GETTING LOGGED===");
+    try {
+      const userTest = await axios.post("/auth/login", {
+        email: userEmail,
+        password,
+      });
+      console.log("is there a user", userTest);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -19,8 +29,9 @@ export default function login() {
           <input
             type="text"
             name="name"
-            value={user}
-            onChange={(evt) => setUser(evt.target.value)}
+            value={userEmail}
+            onChange={(evt) => setUserEmail(evt.target.value)}
+            onBlur={(evt) => setUserEmail(evt.target.value)}
           />
         </label>
 
@@ -31,6 +42,7 @@ export default function login() {
             name="password"
             value={password}
             onChange={(evt) => setPassword(evt.target.value)}
+            onBlur={(evt) => setPassword(evt.target.value)}
           />
         </label>
         <input type="submit" value="Submit" />

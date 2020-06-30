@@ -8,15 +8,38 @@ const renter = require("./api/renters");
 const session = require("express-session");
 const passport = require("passport");
 
+passport.serializeUser((user, done) => done(null, user));
+
+passport.deserializeUser(async (id, done) => {
+  try {
+    const user = await db.one("SELECT * FROM users WHERE users.id = $1", [id]);
+    done(null, user);
+  } catch (err) {
+    done(err);
+  }
+});
+
 const devApp = async () => {
   app.use(morgan("dev"));
 
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
+  app.use(
+    session({
+      secret: process.env.SESSION_SECRET || "storing more things",
+      resave: false,
+      saveUninitialized: false,
+    })
+  );
+
+  app.use(passport.initialize());
+  app.use(passport.session());
+
   // app.use("/api", require("./api"));
 
   app.use("/api", renter);
+  app.use("/auth", require("./auth"));
 
   app.use(express.static(path.join(__dirname, "..", "public")));
 

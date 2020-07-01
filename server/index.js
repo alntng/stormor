@@ -8,7 +8,9 @@ const renter = require("./api/renters");
 const session = require("express-session");
 const passport = require("passport");
 
-passport.serializeUser((user, done) => done(null, user));
+passport.serializeUser((user, done) => {
+  done(null, user[0].id);
+});
 
 passport.deserializeUser(async (id, done) => {
   try {

@@ -1,3 +1,14 @@
+.navbar {
+  display: flex;
+  text-align: center;
+}
+
+.navbar > a {
+  text-decoration: none;
+  margin: 20px 10px 0;
+  padding: 10px 5px;
+}
+
 body {
   font-family: sans-serif;
 }

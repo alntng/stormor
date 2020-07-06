@@ -1,4 +1,6 @@
-require("dotenv").config(); // need this line to be able to access process.env properties that are defined in .env file
+require("dotenv").config();
+
+// need this line to be able to access process.env properties that are defined in .env file
 // found at root of project
 
 const pgp = require("pg-promise")();
@@ -8,9 +10,9 @@ const pkg = require("../../package.json");
 // pkg.name + (process.env.NODE_ENV === "test" ? "-test" : "");
 const databaseName = "stormor";
 
-// const db = pgp(
-//   process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`
-// );
+const db = pgp(
+  process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`
+);
 
 // const db = pgp({
 //   user: process.env.DB_USER,
@@ -20,7 +22,7 @@ const databaseName = "stormor";
 //   port: process.env.DB_PORT,
 // });
 
-const db = pgp(`postgres://localhost:5432/stormor`);
+// const db = pgp(`postgres://localhost:5432/stormor`);
 
 module.exports = db;
 

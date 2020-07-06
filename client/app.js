@@ -1,11 +1,13 @@
 import React from "react";
-import LoginForm from "./login";
+
+import Navbar from "./components/Navbar";
+import Routes from "./routes";
 
 const App = () => {
   return (
     <div>
-      <h1>Hello</h1>
-      <LoginForm />
+      <Navbar />
+      <Routes />
     </div>
   );
 };

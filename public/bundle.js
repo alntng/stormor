@@ -155,18 +155,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n      background: palevioletred;\n      color: white;\n    "]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  background: transparent;\n  border-radius: 3px;\n  border: 2px solid palevioletred;\n  color: palevioletred;\n  margin: 0 1em;\n  padding: 0.25em 1em;\n\n  ", "\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin: 0.5em;\n  background: #636b61;\n  border: 1px solid #636b61;\n  border-radius: 2px;\n  font-size: 15px;\n  color: #fff;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -196,7 +186,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  text-align: center;\n  margin: 5% 0px 0px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  text-align: center;\n  padding: 100px;\n  background: #afa2ff;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -213,9 +203,7 @@ var OverviewLanding = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].
 var OverviewPanel = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), function (props) {
   return props.subpanel && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
 });
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject4(), function (props) {
-  return props.primary && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject5());
-});
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject4());
 function Overview() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewLanding, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Software to make storage unit management easy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Owners shouldn't sweat the small stuff. Let Stormor take care of that."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
     primary: true

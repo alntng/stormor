@@ -1,3 +1,30 @@
 .overview-landing {
   text-align: center;
+  margin: 5% 0px 0px;
+}
+
+.overview-panel-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px 0px;
+}
+
+.overview-subpanel-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.overview-panel-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px 0px;
+}
+
+.overview-subpanel-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
 }

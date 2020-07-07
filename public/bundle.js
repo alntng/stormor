@@ -161,7 +161,19 @@ __webpack_require__.r(__webpack_exports__);
 function Overview() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "overview-landing"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Software to make storage unit management easy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Owners shouldn't sweat the small stuff. Let Stormor take care of that."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Overview"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Tour"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "FAQ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This is the overview page"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Software to make storage unit management easy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Owners shouldn't sweat the small stuff. Let Stormor take care of that."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Overview"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Tour"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "FAQ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overview-panel-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://candysdirt.com/wp-content/uploads/garage-full-of-possessions2-1.jpg"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overview-subpanel-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Do you feel your storage warehouse looks like this?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Managing an entire warehouse of storage units is difficult. Too many customers, too many units to keep track of, and sometimes they miss payments. How can any one person manage all this on their own?"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overview-panel-2"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "overview-subpanel-2"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Our software and team can help out in every step"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our team works around the clock ensuring stability and reliability for the software you rely on. We promise to do our part in providing you the best service, so you can do your part in running your business for the community.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://homebusinessmag.com/wp-content/uploads/2018/04/Depositphotos_151249562_m-2015.jpg"
+  })));
 }
 
 /***/ }),
@@ -11712,7 +11724,7 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".overview-landing {\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, ".overview-landing {\n  text-align: center;\n  margin: 5% 0px 0px;\n}\n\n.overview-panel-1 {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 50px 0px 0px;\n}\n\n.overview-subpanel-1 {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  width: 30%;\n}\n\n.overview-panel-2 {\n  display: flex;\n  justify-content: space-evenly;\n  margin: 50px 0px 0px;\n}\n\n.overview-subpanel-2 {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  width: 30%;\n}\n", ""]);
 // Exports
 module.exports = exports;
 

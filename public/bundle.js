@@ -322,6 +322,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100%;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
   var data = _taggedTemplateLiteral(["\n  flex: ", ";\n"]);
 
@@ -361,13 +371,16 @@ var Row = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templat
 var Col = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), function (props) {
   return props.size;
 });
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.attrs({
+  src: "https://www.storedge.com/images/home/hero.png"
+})(_templateObject4());
 
 var Homepage = function Homepage() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Grid, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Row, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
     size: 1
-  }, "The new standard in self storage technology"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The new standard in self storage technology"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to storMor. We\u2019re the industry\u2019s most integrated technology solution, with user-friendly software, websites, and online rentals. Our modern, all-in-one technology platform allows you to manage your business seamlessly from anywhere in the world.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Col, {
     size: 2
-  }, "Welcome to storEDGE\xAE. We\u2019re the industry\u2019s most integrated technology solution, with user-friendly software, websites, and online rentals. Our modern, all-in-one technology platform allows you to manage your business seamlessly from anywhere in the world."))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Image, null)))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Homepage);

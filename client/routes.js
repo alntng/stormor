@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { withRouter, Route, Switch } from "react-router-dom";
-import LoginForm from "./components/Login";
+import LoginForm from "./components/login";
 import SignupForm from "./components/Signup";
 import Overview from "./components/Overview";
 import Homepage from "./components/homepage";

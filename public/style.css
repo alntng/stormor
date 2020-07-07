@@ -1,7 +1,7 @@
-.navbar {
+/* .navbar {
   display: flex;
   text-align: center;
-}
+} */
 
 .graphic {
   max-width: 100%;
@@ -9,26 +9,26 @@
   min-height: 207px;
 }
 
-.row {
+/* .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-}
+} */
 
-.column {
+/* .column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-}
+} */
 
-.double-column {
+/* .double-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 2;
-}
+} */
 .navbar > a {
   text-decoration: none;
   margin: 20px 10px 0;

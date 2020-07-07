@@ -309,7 +309,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Homepage = function Homepage() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello"));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "column"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The new standard in self storage technology"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to storEDGE\xAE. We\u2019re the industry\u2019s most integrated technology solution, with user-friendly software, websites, and online rentals. Our modern, all-in-one technology platform allows you to manage your business seamlessly from anywhere in the world."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "double-column"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "graphic",
+    src: "https://www.storedge.com/images/home/hero.png"
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Homepage);

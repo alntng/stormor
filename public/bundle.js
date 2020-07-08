@@ -155,8 +155,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n      background: #636b61;\n      border: 1px solid #636b61;\n      color: #fff;\n    "]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n  margin: 0.5em;\n  background: #636b61;\n  border: 1px solid #636b61;\n  padding: 5px 10px 5px;\n  border-radius: 5px;\n  font-size: 15px;\n  color: #fff;\n\n  &:hover {\n    background: black;\n  }\n\n  ", "\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n  width: 20%;\n  height: auto;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n  padding: 30px;\n  background: #afa2ff;\n  color: #fff;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n      margin: 0px;\n      display: grid;\n      grid-template-columns: auto auto auto;\n      grid-column-gap: 50px;\n    "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  font-family: Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic,\n    Arial, sans-serif;\n  background: #7a89c2;\n  color: #fff;\n  margin: 10em 0px 50px;\n  padding: 20px;\n  text-align: center;\n\n  ", "\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0.5em;\n  background: #636b61;\n  border: 1px solid #636b61;\n  border-radius: 2px;\n  font-size: 15px;\n  color: #fff;\n"]);
+  var data = _taggedTemplateLiteral(["\n      display: flex;\n      justify-content: center;\n      flex-direction: column;\n      background: #e3d7ff;\n      padding: 3em;\n      width: 30%;\n    "]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -166,7 +226,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n      display: flex;\n      justify-content: center;\n      flex-direction: column;\n      width: 30%;\n    "]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-evenly;\n  margin: 50px 0px 0px;\n\n  ", "\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -176,7 +236,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-evenly;\n  margin: 50px 0px 0px;\n\n  ", "\n"]);
+  var data = _taggedTemplateLiteral(["\n  text-align: center;\n  padding: 100px;\n  background: #afa2ff;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -186,7 +246,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  text-align: center;\n  padding: 100px;\n  background: #afa2ff;\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: Georgia, serif;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -199,27 +259,58 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var OverviewLanding = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-var OverviewPanel = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), function (props) {
-  return props.subpanel && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
+var OverviewDiv = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var OverviewLanding = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+var OverviewPanel = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), function (props) {
+  return props.subpanel && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject4());
 });
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject4());
+var FeaturePanel = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject5(), function (props) {
+  return props.subfeatures && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject6());
+});
+var FeatureCard = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject7());
+var Img = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject8());
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button(_templateObject9(), function (props) {
+  return props.learnMore && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject10());
+});
 function Overview() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewLanding, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Software to make storage unit management easy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Owners shouldn't sweat the small stuff. Let Stormor take care of that."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewDiv, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewLanding, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Software to make storage unit management easy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Owners shouldn't sweat the small stuff. Let Stormor take care of that."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
     primary: true
   }, "Overview"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
     primary: true
   }, "Tour"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
     primary: true
-  }, "FAQ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewPanel, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, "FAQ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewPanel, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
     src: "https://candysdirt.com/wp-content/uploads/garage-full-of-possessions2-1.jpg"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewPanel, {
     subpanel: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Do you feel your storage warehouse looks like this?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Managing an entire warehouse of storage units is difficult. Too many customers, too many units to keep track of, and sometimes they miss payments. How can any one person manage all this on their own?"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewPanel, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OverviewPanel, {
     subpanel: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Our software and team can help out in every step"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our team works around the clock ensuring stability and reliability for the software you rely on. We promise to do our part in providing you the best service, so you can do your part in running your business for the community.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Our software and team can help out in every step"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our team works around the clock ensuring stability and reliability for the software you rely on. We promise to do our part in providing you the best service, so you can do your part in running your business for the community.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
     src: "https://homebusinessmag.com/wp-content/uploads/2018/04/Depositphotos_151249562_m-2015.jpg"
-  })));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FeaturePanel, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Features"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FeaturePanel, {
+    subfeatures: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FeatureCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "material-icons",
+    style: {
+      fontSize: "60px"
+    }
+  }, "contact_support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "24/7 Customer Support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our support team works around the clock to ensure that your business operates the way it should, and can tackle any problem that comes up."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
+    learnMore: true
+  }, "Learn More")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FeatureCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "material-icons",
+    style: {
+      fontSize: "60px"
+    }
+  }, "https"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Advanced Cybersecurity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "With safeguards endorsed by the President himself, you and your customers can rest easy knowing your private data is safe and sound."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
+    learnMore: true
+  }, "Learn More")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FeatureCard, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "material-icons",
+    style: {
+      fontSize: "60px"
+    }
+  }, "people"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Accessible User Interface"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our world-class team of designers, UX developers, and specialists have worked hard to ensure the most smooth user experience possible."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
+    learnMore: true
+  }, "Learn More")))));
 }
 
 /***/ }),

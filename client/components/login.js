@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
+import styled from "styled-components";
 
 export default function Login() {
   const [userEmail, setUserEmail] = useState("");
@@ -22,31 +24,80 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username:
+    <ContainerDiv>
+      <Link to="/">
+        <LoginHeader>STORE DEEZ</LoginHeader>
+      </Link>
+      <LoginFormContainer onSubmit={handleSubmit}>
+        <FormInputContainer>
           <input
+            aria-label="email"
             type="text"
-            name="name"
+            name="email"
+            placeholder="Email"
             value={userEmail}
             onChange={(evt) => setUserEmail(evt.target.value)}
             onBlur={(evt) => setUserEmail(evt.target.value)}
           />
-        </label>
-
-        <label>
-          Password:
+        </FormInputContainer>
+        <FormInputContainer>
           <input
+            aria-label="password"
             type="password"
             name="password"
+            placeholder="Password"
             value={password}
             onChange={(evt) => setPassword(evt.target.value)}
             onBlur={(evt) => setPassword(evt.target.value)}
           />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+        </FormInputContainer>
+        <FormButtonContainer>
+          <LoginSubmitButton type="submit">Login</LoginSubmitButton>
+        </FormButtonContainer>
+      </LoginFormContainer>
+    </ContainerDiv>
   );
 }
+
+const LoginFormContainer = styled.form`
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid blue;
+  height: 90%;
+  background: grey;
+`;
+
+const FormInputContainer = styled.div`
+  margin: 1.5em auto;
+  display: flex;
+  justify-content: center;
+  outline: 1px solid blue;
+  background: lightgrey;
+`;
+
+const FormButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const LoginSubmitButton = styled.button`
+  background: #27a9e1;
+  border: 1px solid #c7c7c7;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  width: auto;
+  margin: auto;
+`;
+
+const LoginHeader = styled.h1`
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  line-height: 2.5em;
+`;
+
+const ContainerDiv = styled.div`
+  height: 30em;
+  background: red;
+`;

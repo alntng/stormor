@@ -45,7 +45,7 @@ export default function signup() {
       }}
     >
       <GridItemDiv>
-        <input
+        <SignupInput
           type="text"
           name="username"
           aria-label="username"
@@ -54,9 +54,8 @@ export default function signup() {
           onChange={(evt) => setUsername(evt.target.value)}
           onBlur={(evt) => setUsername(evt.target.value)}
         />
-      </GridItemDiv>
-      <GridItemDiv>
-        <input
+
+        <SignupInput
           type="text"
           name="email"
           aria-label="email"
@@ -67,7 +66,7 @@ export default function signup() {
         />
       </GridItemDiv>
       <GridItemDiv>
-        <input
+        <SignupInput
           type="password"
           name="password"
           aria-label="password"
@@ -76,9 +75,8 @@ export default function signup() {
           onChange={(evt) => setPassword(evt.target.value)}
           onBlur={(evt) => setPassword(evt.target.value)}
         />
-      </GridItemDiv>
-      <GridItemDiv>
-        <input
+
+        <SignupInput
           type="text"
           name="mailing-address"
           aria-label="mailing-address"
@@ -90,14 +88,14 @@ export default function signup() {
       </GridItemDiv>
       <GridItemDiv>
         <h2>Would you like to sign up as an owner?</h2>
-        <input
+        <SignupInput
           type="radio"
           name="ownership"
           onChange={() => setIsOwner(true)}
           onBlur={() => setIsOwner(true)}
         />
         <label htmlFor="ownership">Yes</label>
-        <input
+        <SignupInput
           type="radio"
           name="ownership"
           onChange={() => setIsOwner(false)}
@@ -105,17 +103,15 @@ export default function signup() {
         />
         <label htmlFor="ownership">No</label>
       </GridItemDiv>
-      <GridItemDiv>
-        <SignupSubmitButton type="submit">Submit</SignupSubmitButton>
-      </GridItemDiv>
+      <SignupSubmitButton type="submit">Submit</SignupSubmitButton>
     </StyledSignup>
   );
 }
 
 const StyledSignup = styled.form`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 `;
 
 const SignupSubmitButton = styled.button`
@@ -129,6 +125,12 @@ const SignupSubmitButton = styled.button`
 const GridItemDiv = styled.div`
   outline: 1px solid blue;
   background: #ede7f6;
-  padding: 1.5rem;
   border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+`;
+
+const SignupInput = styled.input`
+  margin: 15px;
+  padding: 12px 20px;
 `;

@@ -1,4 +1,4 @@
-## #storMor
+# storMor
 
 ## An online Storage Unit Manager
 

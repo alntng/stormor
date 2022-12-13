@@ -18,7 +18,7 @@
     "axios": "^0.19.2",
     "connect-pg-simple": "^6.1.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.1",
     "morgan": "^1.9.1",
     "passport": "^0.4.1",
